@@ -2,7 +2,10 @@
   "name": "Back-end",
   "version": "0.0.1",
   "private": true,
-  "author": "Domy <wkaifang@gmail.com>",
+  "author": {
+    "name": "Domy",
+    "email": "wkaifang@gmail.com"
+  },
   "scripts": {
     "start": "pm2 start ./bin/www"
   },

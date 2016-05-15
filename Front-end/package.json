@@ -2,12 +2,16 @@
   "name": "Front-end",
   "version": "0.0.1",
   "private": true,
-  "author": "Domy <wkaifang@gmail.com>",
+  "author": {
+    "name": "Domy",
+    "email": "wkaifang@gmail.com"
+  },
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist/",
     "start": "node app.js",
     "build": "npm run clean && webpack --config webpack.config.js",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base dist",
     "lint": "eslint app/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -33,6 +37,7 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
     "eslint": "^2.10.0",
+    "html-webpack-plugin": "^2.17.0",
     "postcss": "^5.0.21",
     "postcss-loader": "^0.9.1",
     "redux-devtools": "^3.3.1",
